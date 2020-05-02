@@ -1,0 +1,168 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.quqo.quiz"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:8:5-66
+14-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.android.installreferrer:installreferrer:1.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/a93265adbe212648bf2deb68e1487702/installreferrer-1.0/AndroidManifest.xml:9:5-110
+15-->[com.android.installreferrer:installreferrer:1.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/a93265adbe212648bf2deb68e1487702/installreferrer-1.0/AndroidManifest.xml:9:22-107
+16
+17    <application
+17-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:9:5-44:19
+18        android:name="io.flutter.app.FlutterApplication"
+18-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:10:9-57
+19        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+19-->[com.android.support:support-compat:28.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/83414a47bbe48c7825740bb8ccc136b5/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:12:9-43
+22        android:label="Quiz quqo"
+22-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:11:9-34
+23        android:supportsRtl="true" >
+23-->[com.facebook.android:facebook-login:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f2fda703f12c4109e0486ae4de59b627/facebook-login-5.15.3/AndroidManifest.xml:28:18-44
+24        <activity
+24-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:13:9-24:20
+25            android:name="com.quqo.quiz.MainActivity"
+25-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:14:13-41
+26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+26-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:17:13-163
+27            android:hardwareAccelerated="true"
+27-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:18:13-47
+28            android:launchMode="singleTop"
+28-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:15:13-43
+29            android:theme="@style/LaunchTheme"
+29-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:16:13-47
+30            android:windowSoftInputMode="adjustResize" >
+30-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:19:13-55
+31            <intent-filter>
+31-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:20:13-23:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:21:17-68
+32-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:21:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:22:17-76
+34-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:22:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <meta-data
+38-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:25:9-26:54
+39            android:name="com.facebook.sdk.ApplicationId"
+39-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:25:20-65
+40            android:value="@string/facebook_app_id" />
+40-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:26:13-52
+41
+42        <activity
+42-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:27:9-29:48
+43            android:name="com.facebook.FacebookActivity"
+43-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:27:19-63
+44            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+44-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:28:13-97
+45            android:label="@string/app_name"
+45-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:29:13-45
+46            android:theme="@style/com_facebook_activity_theme" />
+46-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:33:13-63
+47        <activity
+47-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:30:9-37:20
+48            android:name="com.facebook.CustomTabActivity"
+48-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:30:19-64
+49            android:exported="true" >
+49-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:31:13-36
+50            <intent-filter>
+50-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:31:38-36:25
+51                <action android:name="android.intent.action.VIEW" />
+51-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:13-65
+51-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:21-62
+52
+53                <category android:name="android.intent.category.DEFAULT" />
+53-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:13-72
+53-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:23-69
+54                <category android:name="android.intent.category.BROWSABLE" />
+54-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:13-74
+54-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:23-71
+55
+56                <data android:scheme="@string/fb_login_protocol_scheme" />
+56-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:13-71
+56-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:19-68
+57            </intent-filter>
+58            <intent-filter>
+58-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
+59                <action android:name="android.intent.action.VIEW" />
+59-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:13-65
+59-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:21-62
+60
+61                <category android:name="android.intent.category.DEFAULT" />
+61-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:13-72
+61-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:23-69
+62                <category android:name="android.intent.category.BROWSABLE" />
+62-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:13-74
+62-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:23-71
+63
+64                <data
+64-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:13-71
+65                    android:host="cct.com.quqo.quiz"
+66                    android:scheme="fbconnect" />
+66-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:19-68
+67            </intent-filter>
+68        </activity>
+69
+70        <!--
+71             Don't delete the meta-data below.
+72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+73        -->
+74        <meta-data
+74-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:41:9-43:33
+75            android:name="flutterEmbedding"
+75-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:42:13-44
+76            android:value="2" />
+76-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:43:13-30
+77
+78        <activity android:name="com.facebook.CustomTabMainActivity" />
+78-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:34:9-71
+78-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:34:19-68
+79        <!--
+80         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+81         with the application context. This config is merged in with the host app's manifest,
+82         but there can only be one provider with the same authority activated at any given
+83         point; so if the end user has two or more different apps that use Facebook SDK, only the
+84         first one will be able to use the provider. To work around this problem, we use the
+85         following placeholder in the authority to identify each host application as if it was
+86         a completely different provider.
+87        -->
+88        <provider
+88-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
+89            android:name="com.facebook.internal.FacebookInitProvider"
+89-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:40:13-70
+90            android:authorities="com.quqo.quiz.FacebookInitProvider"
+90-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:41:13-72
+91            android:exported="false" />
+91-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:42:13-37
+92
+93        <receiver
+93-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
+94            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+94-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:45:13-86
+95            android:exported="false" >
+95-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:46:13-37
+96            <intent-filter>
+96-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
+97                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+97-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:48:17-95
+97-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:48:25-92
+98            </intent-filter>
+99        </receiver>
+100    </application>
+101
+102</manifest>
