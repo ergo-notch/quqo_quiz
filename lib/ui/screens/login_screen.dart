@@ -13,7 +13,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final bloc = LoginBloc();
-  
+
   @override
   void initState() {
     super.initState();
@@ -22,27 +22,28 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<LoginBloc>(
-        bloc: bloc,
-        child: Scaffold(
-            appBar: AppBar(title: Text('Ingresa a tu cuenta')),
-            body: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  InkWell(
-                      child: Image.asset(ImageConstants.facebookButtonImage),
-                      onTap: () {
-                        bloc.initiateFBLogin();
-                      }),
-                ])));
+    return Scaffold(
+        appBar: AppBar(title: Text('Ingresa a tu cuenta')),
+        body: OrientationBuilder(builder: (context, orientation) {
+          return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                    margin: EdgeInsets.all(10.0),
+                    child: InkWell(
+                        child: Image.asset(ImageConstants.facebookButtonImage),
+                        onTap: () {
+                          bloc.initiateFBLogin();
+                        })),
+              ]);
+        }));
   }
 
   listenFacebookLogin(LoginBloc bloc) {
     bloc.facebookToken.listen((response) {
       Navigator.pushNamed(context, Routes.searchPlaces);
-    },
-    onError: (error){
+    }, onError: (error) {
       UiHelpers.showErrorDialog(context, error.toString());
     });
   }

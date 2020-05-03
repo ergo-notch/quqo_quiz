@@ -16,11 +16,11 @@
         "source": "/Users/ernestogn028/quqo_quiz/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/ernestogn028/quqo_quiz/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/ernestogn028/quqo_quiz/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/ernestogn028/quqo_quiz/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
         "source": "/Users/ernestogn028/quqo_quiz/android/app/src/main/res/drawable/launch_background.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/ernestogn028/quqo_quiz/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

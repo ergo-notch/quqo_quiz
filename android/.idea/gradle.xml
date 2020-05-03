@@ -8,6 +8,11 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-3.0.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.7/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.27/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/location-3.0.2/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/location_web-1.0.0/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>

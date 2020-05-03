@@ -20,6 +20,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "bloc",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/bloc-0.15.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/boolean_selector-1.0.5",
       "packageUri": "lib/",
@@ -62,16 +68,64 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_bloc",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-0.21.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "flutter_facebook_login",
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-3.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
+      "name": "flutter_google_places",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/flutter_google_places-0.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "flutter_plugin_android_lifecycle",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "flutter_svg",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.15.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/ernestogn028/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.2"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/ernestogn028/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "google_maps_flutter",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.27",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "google_maps_flutter_platform_interface",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter_platform_interface-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "google_maps_webservice",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/google_maps_webservice-0.0.16",
+      "packageUri": "lib/",
+      "languageVersion": "1.20"
     },
     {
       "name": "http",
@@ -92,6 +146,30 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "js",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
+      "name": "location",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/location-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "location_platform_interface",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/location_platform_interface-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "location_web",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/location_web-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.6",
       "packageUri": "lib/",
@@ -110,6 +188,18 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "path_drawing",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
       "name": "pedantic",
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/pedantic-1.8.0+1",
       "packageUri": "lib/",
@@ -122,6 +212,18 @@
       "languageVersion": "2.4"
     },
     {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/provider-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "quiver",
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/quiver-2.0.5",
       "packageUri": "lib/",
@@ -132,6 +234,12 @@
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/rxdart-0.22.6",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "search_map_place",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/search_map_place-0.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.5"
     },
     {
       "name": "sky_engine",
@@ -158,10 +266,22 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "stream_transform",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/stream_transform-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
       "name": "string_scanner",
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "synchronized",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/synchronized-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
     },
     {
       "name": "term_glyph",
@@ -200,7 +320,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-05-02T04:17:02.315072Z",
+  "generated": "2020-05-03T05:12:39.009038Z",
   "generator": "pub",
   "generatorVersion": "2.7.2"
 }

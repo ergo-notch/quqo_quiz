@@ -14,91 +14,91 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:8:5-66
 14-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:8:22-64
-15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-15-->[com.android.installreferrer:installreferrer:1.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/a93265adbe212648bf2deb68e1487702/installreferrer-1.0/AndroidManifest.xml:9:5-110
-15-->[com.android.installreferrer:installreferrer:1.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/a93265adbe212648bf2deb68e1487702/installreferrer-1.0/AndroidManifest.xml:9:22-107
-16
-17    <application
-17-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:9:5-44:19
-18        android:name="io.flutter.app.FlutterApplication"
-18-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:10:9-57
-19        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-19-->[com.android.support:support-compat:28.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/83414a47bbe48c7825740bb8ccc136b5/support-compat-28.0.0/AndroidManifest.xml:22:18-91
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:12:9-43
-22        android:label="Quiz quqo"
-22-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:11:9-34
-23        android:supportsRtl="true" >
-23-->[com.facebook.android:facebook-login:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f2fda703f12c4109e0486ae4de59b627/facebook-login-5.15.3/AndroidManifest.xml:28:18-44
-24        <activity
-24-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:13:9-24:20
-25            android:name="com.quqo.quiz.MainActivity"
-25-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:14:13-41
-26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-26-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:17:13-163
-27            android:hardwareAccelerated="true"
-27-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:18:13-47
-28            android:launchMode="singleTop"
-28-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:15:13-43
-29            android:theme="@style/LaunchTheme"
-29-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:16:13-47
-30            android:windowSoftInputMode="adjustResize" >
-30-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:19:13-55
-31            <intent-filter>
-31-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:20:13-23:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:21:17-68
-32-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:21:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:22:17-76
-34-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:22:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <meta-data
-38-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:25:9-26:54
-39            android:name="com.facebook.sdk.ApplicationId"
-39-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:25:20-65
-40            android:value="@string/facebook_app_id" />
-40-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:26:13-52
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->[:location] /Users/ernestogn028/quqo_quiz/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+15-->[:location] /Users/ernestogn028/quqo_quiz/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+16-->[:location] /Users/ernestogn028/quqo_quiz/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-79
+16-->[:location] /Users/ernestogn028/quqo_quiz/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-76
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+17-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+22
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.android.installreferrer:installreferrer:1.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/7fe703daf4e7c53162dc8c3606dd2c08/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+23-->[com.android.installreferrer:installreferrer:1.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/7fe703daf4e7c53162dc8c3606dd2c08/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+24
+25    <application
+25-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:9:5-44:19
+26        android:name="io.flutter.app.FlutterApplication"
+26-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:10:9-57
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f28d07404e333f72cf5d7457455fa899/core-1.0.0/AndroidManifest.xml:22:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:12:9-43
+30        android:label="Quiz quqo"
+30-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:11:9-34
+31        android:supportsRtl="true" >
+31-->[com.facebook.android:facebook-login:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/ffb87f5d471fb875b23ecf927214754a/jetified-facebook-login-5.15.3/AndroidManifest.xml:28:18-44
+32        <activity
+32-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:13:9-24:20
+33            android:name="com.quqo.quiz.MainActivity"
+33-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:14:13-41
+34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+34-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:17:13-163
+35            android:hardwareAccelerated="true"
+35-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:18:13-47
+36            android:launchMode="singleTop"
+36-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:15:13-43
+37            android:theme="@style/LaunchTheme"
+37-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:16:13-47
+38            android:windowSoftInputMode="adjustResize" >
+38-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:19:13-55
+39            <intent-filter>
+39-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:20:13-23:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:21:17-68
+40-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:21:25-66
 41
-42        <activity
-42-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:27:9-29:48
-43            android:name="com.facebook.FacebookActivity"
-43-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:27:19-63
-44            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-44-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:28:13-97
-45            android:label="@string/app_name"
-45-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:29:13-45
-46            android:theme="@style/com_facebook_activity_theme" />
-46-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:33:13-63
-47        <activity
-47-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:30:9-37:20
-48            android:name="com.facebook.CustomTabActivity"
-48-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:30:19-64
-49            android:exported="true" >
-49-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:31:13-36
-50            <intent-filter>
-50-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:31:38-36:25
-51                <action android:name="android.intent.action.VIEW" />
-51-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:13-65
-51-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:21-62
-52
-53                <category android:name="android.intent.category.DEFAULT" />
-53-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:13-72
-53-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:23-69
-54                <category android:name="android.intent.category.BROWSABLE" />
-54-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:13-74
-54-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:23-71
-55
-56                <data android:scheme="@string/fb_login_protocol_scheme" />
-56-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:13-71
-56-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:19-68
-57            </intent-filter>
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:22:17-76
+42-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:22:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <meta-data
+46-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:25:9-26:54
+47            android:name="com.facebook.sdk.ApplicationId"
+47-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:25:20-65
+48            android:value="@string/facebook_app_id" />
+48-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:26:13-52
+49
+50        <activity
+50-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:27:9-29:48
+51            android:name="com.facebook.FacebookActivity"
+51-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:27:19-63
+52            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+52-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:28:13-97
+53            android:label="@string/app_name"
+53-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:29:13-45
+54            android:theme="@style/com_facebook_activity_theme" />
+54-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:33:13-63
+55        <activity
+55-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:30:9-37:20
+56            android:name="com.facebook.CustomTabActivity"
+56-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:30:19-64
+57            android:exported="true" >
+57-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:31:13-36
 58            <intent-filter>
-58-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
+58-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:31:38-36:25
 59                <action android:name="android.intent.action.VIEW" />
 59-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:13-65
 59-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:21-62
@@ -110,59 +110,98 @@
 62-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:13-74
 62-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:23-71
 63
-64                <data
+64                <data android:scheme="@string/fb_login_protocol_scheme" />
 64-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:13-71
-65                    android:host="cct.com.quqo.quiz"
-66                    android:scheme="fbconnect" />
-66-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:19-68
-67            </intent-filter>
-68        </activity>
-69
-70        <!--
-71             Don't delete the meta-data below.
-72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-73        -->
-74        <meta-data
-74-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:41:9-43:33
-75            android:name="flutterEmbedding"
-75-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:42:13-44
-76            android:value="2" />
-76-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:43:13-30
+64-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:19-68
+65            </intent-filter>
+66            <intent-filter>
+66-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
+67                <action android:name="android.intent.action.VIEW" />
+67-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:13-65
+67-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:32:21-62
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:13-72
+69-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:33:23-69
+70                <category android:name="android.intent.category.BROWSABLE" />
+70-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:13-74
+70-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:34:23-71
+71
+72                <data
+72-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:13-71
+73                    android:host="cct.com.quqo.quiz"
+74                    android:scheme="fbconnect" />
+74-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:35:19-68
+75            </intent-filter>
+76        </activity>
 77
-78        <activity android:name="com.facebook.CustomTabMainActivity" />
-78-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:34:9-71
-78-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/8bc062d16ac605b4d80c0281eb317f29/facebook-common-5.15.3/AndroidManifest.xml:34:19-68
-79        <!--
-80         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-81         with the application context. This config is merged in with the host app's manifest,
-82         but there can only be one provider with the same authority activated at any given
-83         point; so if the end user has two or more different apps that use Facebook SDK, only the
-84         first one will be able to use the provider. To work around this problem, we use the
-85         following placeholder in the authority to identify each host application as if it was
-86         a completely different provider.
-87        -->
-88        <provider
-88-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
-89            android:name="com.facebook.internal.FacebookInitProvider"
-89-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:40:13-70
-90            android:authorities="com.quqo.quiz.FacebookInitProvider"
-90-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:41:13-72
-91            android:exported="false" />
-91-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:42:13-37
-92
-93        <receiver
-93-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
-94            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-94-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:45:13-86
-95            android:exported="false" >
-95-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:46:13-37
-96            <intent-filter>
-96-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
-97                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-97-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:48:17-95
-97-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/2022967df03bd9f77716e72156f0b998/facebook-core-5.15.3/AndroidManifest.xml:48:25-92
-98            </intent-filter>
-99        </receiver>
-100    </application>
-101
-102</manifest>
+78        <!--
+79             Don't delete the meta-data below.
+80             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+81        -->
+82        <meta-data
+82-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:41:9-43:33
+83            android:name="flutterEmbedding"
+83-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:42:13-44
+84            android:value="2" />
+84-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:43:13-30
+85
+86        <activity android:name="com.facebook.CustomTabMainActivity" /> <!-- Needs to be explicitly declared on P+ -->
+86-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:9-71
+86-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:19-68
+87        <uses-library
+87-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+88            android:name="org.apache.http.legacy"
+88-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+89            android:required="false" />
+89-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+90
+91        <activity
+91-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+92-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+93            android:exported="false"
+93-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+95
+96        <meta-data
+96-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+97            android:name="com.google.android.gms.version"
+97-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+98            android:value="@integer/google_play_services_version" />
+98-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+99        <!--
+100         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+101         with the application context. This config is merged in with the host app's manifest,
+102         but there can only be one provider with the same authority activated at any given
+103         point; so if the end user has two or more different apps that use Facebook SDK, only the
+104         first one will be able to use the provider. To work around this problem, we use the
+105         following placeholder in the authority to identify each host application as if it was
+106         a completely different provider.
+107        -->
+108        <provider
+108-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
+109            android:name="com.facebook.internal.FacebookInitProvider"
+109-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:40:13-70
+110            android:authorities="com.quqo.quiz.FacebookInitProvider"
+110-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:41:13-72
+111            android:exported="false" />
+111-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:42:13-37
+112
+113        <receiver
+113-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
+114            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+114-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:45:13-86
+115            android:exported="false" >
+115-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:46:13-37
+116            <intent-filter>
+116-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
+117                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+117-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:17-95
+117-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:25-92
+118            </intent-filter>
+119        </receiver>
+120    </application>
+121
+122</manifest>

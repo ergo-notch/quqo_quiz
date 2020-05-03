@@ -3,6 +3,6 @@
 3    package="com.roughike.facebooklogin.facebooklogin" >
 4
 5    <uses-sdk android:minSdkVersion="16" />
-5-->/Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-1.2.0/android/src/main/AndroidManifest.xml
+5-->/Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-3.0.0/android/src/main/AndroidManifest.xml
 6
 7</manifest>

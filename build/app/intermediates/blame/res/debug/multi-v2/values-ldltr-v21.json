@@ -4,7 +4,7 @@
             "outputFile": "/Users/ernestogn028/quqo_quiz/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f516ee4ebb6b1ebf90cbe7f0795a1d73/appcompat-v7-27.0.2/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
