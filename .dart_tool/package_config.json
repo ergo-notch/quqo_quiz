@@ -296,6 +296,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "transparent_image",
+      "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/transparent_image-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "1.24"
+    },
+    {
       "name": "typed_data",
       "rootUri": "file:///Users/ernestogn028/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6",
       "packageUri": "lib/",
@@ -320,7 +326,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-05-03T05:12:39.009038Z",
+  "generated": "2020-05-03T16:35:40.006803Z",
   "generator": "pub",
   "generatorVersion": "2.7.2"
 }

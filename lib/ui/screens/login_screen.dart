@@ -24,20 +24,20 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text('Ingresa a tu cuenta')),
-        body: OrientationBuilder(builder: (context, orientation) {
-          return Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
+        body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              OrientationBuilder(builder: (context, orientation) {
+                return Container(
                     margin: EdgeInsets.all(10.0),
                     child: InkWell(
                         child: Image.asset(ImageConstants.facebookButtonImage),
                         onTap: () {
                           bloc.initiateFBLogin();
-                        })),
-              ]);
-        }));
+                        }));
+              }),
+            ]));
   }
 
   listenFacebookLogin(LoginBloc bloc) {

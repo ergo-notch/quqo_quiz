@@ -345,6 +345,13 @@
             </list>
           </value>
         </entry>
+        <entry key="transparent_image">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/transparent_image-1.0.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="typed_data">
           <value>
             <list>
@@ -414,6 +421,7 @@
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/synchronized-2.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/term_glyph-1.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/test_api-0.2.11/lib" />
+      <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/transparent_image-1.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dartlang.org/xml-3.5.0/lib" />
