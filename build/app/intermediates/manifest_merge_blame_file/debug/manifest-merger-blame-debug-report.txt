@@ -36,7 +36,7 @@
 23-->[com.android.installreferrer:installreferrer:1.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/7fe703daf4e7c53162dc8c3606dd2c08/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
 24
 25    <application
-25-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:9:5-45:19
+25-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:9:5-48:19
 26        android:name="io.flutter.app.FlutterApplication"
 26-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:10:9-57
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -137,73 +137,80 @@
 76            </intent-filter>
 77        </activity>
 78
-79        <!--
-80             Don't delete the meta-data below.
-81             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-82        -->
-83        <meta-data
-83-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:42:9-44:33
-84            android:name="flutterEmbedding"
-84-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:43:13-44
-85            android:value="2" />
-85-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:44:13-30
-86
-87        <activity android:name="com.facebook.CustomTabMainActivity" /> <!-- Needs to be explicitly declared on P+ -->
-87-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:9-71
-87-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:19-68
-88        <uses-library
-88-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
-89            android:name="org.apache.http.legacy"
-89-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
-90            android:required="false" />
-90-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
-91
-92        <activity
-92-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-93-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-94            android:exported="false"
-94-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-95-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-96
-97        <meta-data
-97-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-98            android:name="com.google.android.gms.version"
-98-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-99            android:value="@integer/google_play_services_version" />
-99-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-100        <!--
-101         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-102         with the application context. This config is merged in with the host app's manifest,
-103         but there can only be one provider with the same authority activated at any given
-104         point; so if the end user has two or more different apps that use Facebook SDK, only the
-105         first one will be able to use the provider. To work around this problem, we use the
-106         following placeholder in the authority to identify each host application as if it was
-107         a completely different provider.
-108        -->
-109        <provider
-109-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
-110            android:name="com.facebook.internal.FacebookInitProvider"
-110-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:40:13-70
-111            android:authorities="com.quqo.quiz.FacebookInitProvider"
-111-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:41:13-72
-112            android:exported="false" />
-112-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:42:13-37
-113
-114        <receiver
-114-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
-115            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-115-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:45:13-86
-116            android:exported="false" >
-116-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:46:13-37
-117            <intent-filter>
-117-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
-118                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-118-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:17-95
-118-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:25-92
-119            </intent-filter>
-120        </receiver>
-121    </application>
-122
-123</manifest>
+79        <meta-data
+79-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:39:9-41:71
+80            android:name="com.google.android.geo.API_KEY"
+80-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:40:13-58
+81            android:value="AIzaSyBeCHH6EOer1RtmY7IalaXVsYeQNETshYQ" />
+81-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:41:13-68
+82
+83        <!--
+84             Don't delete the meta-data below.
+85             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+86        -->
+87        <meta-data
+87-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:45:9-47:33
+88            android:name="flutterEmbedding"
+88-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:46:13-44
+89            android:value="2" />
+89-->/Users/ernestogn028/quqo_quiz/android/app/src/main/AndroidManifest.xml:47:13-30
+90
+91        <activity android:name="com.facebook.CustomTabMainActivity" /> <!-- Needs to be explicitly declared on P+ -->
+91-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:9-71
+91-->[com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:19-68
+92        <uses-library
+92-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+93            android:name="org.apache.http.legacy"
+93-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+94            android:required="false" />
+94-->[com.google.android.gms:play-services-maps:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/05fd23014d14d5f8988d77be1fbc46a9/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+95
+96        <activity
+96-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+97-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-base:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+100
+101        <meta-data
+101-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+102            android:name="com.google.android.gms.version"
+102-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+103            android:value="@integer/google_play_services_version" />
+103-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/862cde625aad1fbef0a39de3e07c14e3/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+104        <!--
+105         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+106         with the application context. This config is merged in with the host app's manifest,
+107         but there can only be one provider with the same authority activated at any given
+108         point; so if the end user has two or more different apps that use Facebook SDK, only the
+109         first one will be able to use the provider. To work around this problem, we use the
+110         following placeholder in the authority to identify each host application as if it was
+111         a completely different provider.
+112        -->
+113        <provider
+113-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
+114            android:name="com.facebook.internal.FacebookInitProvider"
+114-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:40:13-70
+115            android:authorities="com.quqo.quiz.FacebookInitProvider"
+115-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:41:13-72
+116            android:exported="false" />
+116-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:42:13-37
+117
+118        <receiver
+118-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
+119            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+119-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:45:13-86
+120            android:exported="false" >
+120-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:46:13-37
+121            <intent-filter>
+121-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
+122                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+122-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:17-95
+122-->[com.facebook.android:facebook-core:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/c0206c9cc8a7e47130f9c880b010f0e8/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:25-92
+123            </intent-filter>
+124        </receiver>
+125    </application>
+126
+127</manifest>

@@ -11,38 +11,42 @@ import 'package:quiz/utils/screen_ratio.dart';
 
 //It builds the Gooogle Map on full Screen
 class CustomGoogleMap extends StatefulWidget {
-  Function(LocationData) currentLocation;
+  Set<Marker> markers;
 
-  CustomGoogleMap({this.currentLocation});
+  CustomGoogleMap({@required this.markers});
+
+  Set<Marker> mapMarkers = new Set();
 
   @override
-  _CustomGoogleMapState createState() => _CustomGoogleMapState(currentLocation);
+  _CustomGoogleMapState createState() => _CustomGoogleMapState();
 }
 
 class _CustomGoogleMapState extends State<CustomGoogleMap> {
-  LocationBloc _locationManager = LocationBloc();
-  Function(LocationData) currentLocation;
-
+  LocationBloc _locationBloc = LocationBloc();
   Set<Marker> markers;
+  LatLng currentLocation;
 
-  _CustomGoogleMapState(this.currentLocation);
+  _CustomGoogleMapState();
 
   final Completer<GoogleMapController> mapController = Completer();
   bool isLoading = false;
   BitmapDescriptor myIcon;
 
-  Marker mainMarker;
-  String _mapStyle;
+  void updateMarkers(Set<Marker> markers) {
+    setState(() {
+      this.widget.mapMarkers = markers;
+    });
+  }
 
   @override
   void dispose() {
     super.dispose();
-    // _locationBloc.dispose();
+    _locationBloc.dispose();
   }
 
   void _onMapCreated(GoogleMapController controller) {
-    controller.setMapStyle(_mapStyle);
     mapController.complete(controller);
+//    this._currentLocation();
   }
 
   void _currentLocation() async {
@@ -51,7 +55,6 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
     var location = new Location();
     try {
       currentLocation = await location.getLocation();
-      this.currentLocation(currentLocation);
     } on Exception {
       currentLocation = null;
     }
@@ -67,27 +70,29 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
 
   @override
   void initState() {
-//    getCurrentLocationMarker();
-    _locationManager.onChangeLocation();
+    locationBloc.getCurrentLocation();
+//    locationBloc.onChangeLocation();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<LocationResource>(
-        stream: _locationManager.locationChanged.asBroadcastStream(),
+        stream: locationBloc.notifyCurrentLocation,
         initialData: LocationResource.loading(),
         builder: (context, snapshot) {
           return _handleLocation(context, snapshot);
         });
   }
 
-  Widget _handleLocation(
-      BuildContext context, AsyncSnapshot<LocationResource> snapshot) {
-    if(snapshot.data.status == Status.LOADING){
+  Widget _handleLocation(BuildContext context,
+      AsyncSnapshot<LocationResource> snapshot) {
+    if (snapshot.data.status == Status.LOADING) {
       return showLoader();
-    }else{
-      return showMap(LatLng(0,0));
+    } else {
+      this.currentLocation = new LatLng(
+          snapshot.data.data.latitude, snapshot.data.data.longitude);
+      return showMap(this.currentLocation);
     }
   }
 
@@ -106,7 +111,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
   Widget showMap(LatLng data) {
     CameraPosition _initialCameraPosition = CameraPosition(
       target: data,
-      zoom: 16.5,
+      zoom: 16,
     );
 
     return Scaffold(
@@ -133,5 +138,4 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
           markers: markers,
         ));
   }
-
 }

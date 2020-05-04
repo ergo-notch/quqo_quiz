@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:quiz/ui/screens/login_screen.dart';
 import 'package:quiz/ui/screens/place_details_screen.dart';
-import 'package:quiz/ui/screens/search_places.dart';
+import 'package:quiz/ui/screens/search_places_screen.dart';
 
 class Navigation {
   static Map get routes => _routes;

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quiz/models/product_entity.dart';
+import 'package:quiz/models/place_model.dart';
+import 'package:quiz/models/product_model.dart';
 import 'package:quiz/utils/resources.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -12,8 +13,11 @@ class PlaceDetailsScreen extends StatefulWidget {
 class _PlaceDetailsState extends State<PlaceDetailsScreen> {
   var productList = Constants.productList;
 
+  PlaceModel place;
+
   @override
   Widget build(BuildContext context) {
+    this.place = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(title: Text('Detalles del lugar')),
       body: Column(
@@ -22,6 +26,7 @@ class _PlaceDetailsState extends State<PlaceDetailsScreen> {
             flex: 1,
             child: Stack(
               children: <Widget>[
+                FadeInImage.memoryNetwork(placeholder: null, image: place.icon),
                 Positioned(
                   top: 0.0,
                   right: 0.0,
@@ -52,7 +57,7 @@ class _PlaceDetailsState extends State<PlaceDetailsScreen> {
                             borderRadius: BorderRadius.circular(10.0)),
                         child: Container(
                           padding: EdgeInsets.all(10.0),
-                          child: Text("Hola"),
+                          child: Text(place.placeName + "\n" + place.address),
                         ),
                       )),
                   Expanded(

@@ -1,5 +1,7 @@
 
-import 'package:quiz/models/product_entity.dart';
+import 'package:quiz/models/product_model.dart';
+
+enum HttpMethods { GET, POST, PUT, DELETE, PATCH }
 
 class ImageConstants{
   static String facebookButtonImage = "lib/ui/assets/facebook_login.png";
@@ -12,6 +14,7 @@ class ImageConstants{
 }
 
 class Constants{
+
   static var googleApiKey = "AIzaSyAmlXHQc-tlACdOFcP8v1EkOh-yjlnn7Rk";
 
   static List<Product> productList = [

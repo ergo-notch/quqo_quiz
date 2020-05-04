@@ -33,11 +33,20 @@ class LocationResource {
 
 class LocationBloc implements Bloc {
   LocationResource lastLocation;
+  static final LocationBloc _singleton = LocationBloc._internal();
 
-  BehaviorSubject<LocationResource> _locationChanged = BehaviorSubject<LocationResource>();
-  BehaviorSubject<LocationResource> _currentLocation = BehaviorSubject<LocationResource>();
-  BehaviorSubject<LocationResource> _locationSettings = BehaviorSubject<LocationResource>();
+  factory LocationBloc() {
+    return _singleton;
+  }
 
+  LocationBloc._internal();
+
+  BehaviorSubject<LocationResource> _locationChanged =
+      BehaviorSubject<LocationResource>();
+  BehaviorSubject<LocationResource> _currentLocation =
+      BehaviorSubject<LocationResource>();
+  BehaviorSubject<LocationResource> _locationSettings =
+      BehaviorSubject<LocationResource>();
 
   Stream<LocationResource> get locationChanged => _locationChanged.stream;
   Stream<LocationResource> get notifyCurrentLocation => _currentLocation.stream;
@@ -52,7 +61,8 @@ class LocationBloc implements Bloc {
         currentLocation = location;
       });
 
-      LocationResource _locationResource = LocationResource.success(currentLocation);
+      LocationResource _locationResource =
+          LocationResource.success(currentLocation);
 
       _locationSettings.sink.add(_locationResource);
     } else {
@@ -68,7 +78,7 @@ class LocationBloc implements Bloc {
       String error;
 
       print("DRM getCurrentLocation.1");
-      if(lastLocation == null){
+      if (lastLocation == null) {
         try {
           print("DRM getCurrentLocation.2");
           Location location = Location();
@@ -78,7 +88,8 @@ class LocationBloc implements Bloc {
             print("DRM getCurrentLocation.3");
             LocationData currentLocation = await location.getLocation();
             print("DRM getCurrentLocation.3.3");
-            LocationResource _locationResource = LocationResource.success(currentLocation);
+            LocationResource _locationResource =
+                LocationResource.success(currentLocation);
             print("DRM getCurrentLocation.3.4");
             lastLocation = _locationResource;
             _currentLocation.sink.add(_locationResource);
@@ -94,7 +105,8 @@ class LocationBloc implements Bloc {
             error = 'Permission denied';
           } else if (e.code == 'PERMISSION_DENIED_NEVER_ASK') {
             print("DRM getCurrentLocation.8");
-            error = 'Permission denied - please ask the user to enable it from the app settings';
+            error =
+                'Permission denied - please ask the user to enable it from the app settings';
           }
           print("DRM getCurrentLocation.9");
           LocationResource _locationResource = LocationResource.error(error);
@@ -120,5 +132,6 @@ class LocationBloc implements Bloc {
     _locationChanged.close();
     _locationSettings.close();
   }
-
 }
+
+final locationBloc = LocationBloc();

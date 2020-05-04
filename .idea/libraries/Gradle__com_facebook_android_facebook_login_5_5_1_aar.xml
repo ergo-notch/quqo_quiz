@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-login:5.5.1@aar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/f5c01449be673f235b650d51d09f01cb/jetified-facebook-login-5.5.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
