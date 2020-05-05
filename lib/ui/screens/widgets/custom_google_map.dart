@@ -11,11 +11,9 @@ import 'package:quiz/utils/screen_ratio.dart';
 
 //It builds the Gooogle Map on full Screen
 class CustomGoogleMap extends StatefulWidget {
-  Set<Marker> markers;
+  List<Marker> markers = new List();
 
-  CustomGoogleMap({@required this.markers});
-
-  Set<Marker> mapMarkers = new Set();
+  CustomGoogleMap(this.markers);
 
   @override
   _CustomGoogleMapState createState() => _CustomGoogleMapState();
@@ -23,8 +21,9 @@ class CustomGoogleMap extends StatefulWidget {
 
 class _CustomGoogleMapState extends State<CustomGoogleMap> {
   LocationBloc _locationBloc = LocationBloc();
-  Set<Marker> markers;
   LatLng currentLocation;
+
+  double zoomCamera = 16.0;
 
   _CustomGoogleMapState();
 
@@ -32,9 +31,9 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
   bool isLoading = false;
   BitmapDescriptor myIcon;
 
-  void updateMarkers(Set<Marker> markers) {
+  void updateMarkers(List<Marker> markers) {
     setState(() {
-      this.widget.mapMarkers = markers;
+      this.widget.markers = markers;
     });
   }
 
@@ -46,7 +45,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
 
   void _onMapCreated(GoogleMapController controller) {
     mapController.complete(controller);
-//    this._currentLocation();
+    this._currentLocation();
   }
 
   void _currentLocation() async {
@@ -63,7 +62,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
       CameraPosition(
         bearing: 0,
         target: LatLng(currentLocation.latitude, currentLocation.longitude),
-        zoom: 17.0,
+        zoom: zoomCamera,
       ),
     ));
   }
@@ -71,7 +70,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
   @override
   void initState() {
     locationBloc.getCurrentLocation();
-//    locationBloc.onChangeLocation();
+    locationBloc.onChangeLocation();
     super.initState();
   }
 
@@ -85,13 +84,13 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
         });
   }
 
-  Widget _handleLocation(BuildContext context,
-      AsyncSnapshot<LocationResource> snapshot) {
-    if (snapshot.data.status == Status.LOADING) {
+  Widget _handleLocation(
+      BuildContext context, AsyncSnapshot<LocationResource> snapshot) {
+    if (snapshot.data.status != Status.SUCCESS) {
       return showLoader();
     } else {
-      this.currentLocation = new LatLng(
-          snapshot.data.data.latitude, snapshot.data.data.longitude);
+      this.currentLocation =
+          new LatLng(snapshot.data.data.latitude, snapshot.data.data.longitude);
       return showMap(this.currentLocation);
     }
   }
@@ -111,7 +110,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
   Widget showMap(LatLng data) {
     CameraPosition _initialCameraPosition = CameraPosition(
       target: data,
-      zoom: 16,
+      zoom: zoomCamera,
     );
 
     return Scaffold(
@@ -123,8 +122,6 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
           child: IconButton(
             onPressed: _currentLocation,
             icon: Container(
-              height: 100.0,
-              width: 100.0,
               child: SvgPicture.asset(ImageConstants.currentLocationGet),
             ),
           ),
@@ -135,7 +132,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
           compassEnabled: false,
           myLocationButtonEnabled: false,
           initialCameraPosition: _initialCameraPosition,
-          markers: markers,
+          markers: this.widget.markers.toSet(),
         ));
   }
 }

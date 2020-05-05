@@ -10,7 +10,6 @@ import 'package:transparent_image/transparent_image.dart';
 class ResultsScreen extends StatefulWidget {
   ValueChanged<PlaceModel> onSelectedPlace;
   ValueNotifier<String> findName;
-  Orientation mOrientation = Orientation.portrait;
 
   ResultsScreen({@required this.findName, @required this.onSelectedPlace});
 
@@ -40,8 +39,7 @@ class _ResultsState extends State<ResultsScreen> {
                     builder: (context, value, child) {
                       if (value.toString().isEmpty) {
                         return Center(
-                            child: Text(
-                                'Comienza a escribir para\n hacer la busqueda'));
+                            child: Text('Escribe para hacer la busqueda'));
                       } else {
                         searchPlacesBloc.fetchPlaces(
                             value,
@@ -55,25 +53,33 @@ class _ResultsState extends State<ResultsScreen> {
                                 List<PlaceModel> places =
                                     (snapshot.data.model as PlacesModel)
                                         .results;
-                                return GridView.count(
-                                    crossAxisCount: 2,
-                                    children:
-                                        List.generate(places.length, (index) {
-                                      PlaceModel place = places[index];
-                                      return Card(
-                                          margin: EdgeInsets.all(5.0),
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(10.0)),
-                                          child: InkWell(
-                                              onTap: () {
-                                                this
-                                                    .widget
-                                                    .onSelectedPlace(place);
-                                              },
-                                              child: _buildItemView(place.icon,
-                                                  place.placeName)));
-                                    }));
+                                if (places.isEmpty) {
+                                  return Center(child: Text('Sin Resultados'));
+                                } else {
+                                  return GridView.count(
+                                      crossAxisCount: 2,
+                                      children:
+                                          List.generate(places.length, (index) {
+                                        PlaceModel place = places[index];
+                                        return Card(
+                                            margin: EdgeInsets.all(5.0),
+                                            shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(
+                                                        10.0)),
+                                            child: InkWell(
+                                                onTap: () {
+                                                  this
+                                                      .widget
+                                                      .onSelectedPlace(place);
+                                                },
+                                                child: _buildItemView(
+                                                    place.photos.isEmpty
+                                                        ? place.icon
+                                                        : place.photos.first,
+                                                    place.placeName)));
+                                      }));
+                                }
                               } else {
                                 return Center(child: Text('Sin Resultados'));
                               }
@@ -86,10 +92,10 @@ class _ResultsState extends State<ResultsScreen> {
 
   Widget _buildItemView(String urlImage, String placeHolder) {
     return Column(children: [
-      FadeInImage.memoryNetwork(
-        placeholder: null,
-        image: urlImage,
-      ),
+          FadeInImage.memoryNetwork(
+            placeholder: kTransparentImage,
+            image: urlImage
+          ),
       Container(
         padding: EdgeInsets.all(5.0),
         child: Text(placeHolder),

@@ -128,9 +128,9 @@ class LocationBloc implements Bloc {
   }
 
   void dispose() {
-    _currentLocation.close();
-    _locationChanged.close();
-    _locationSettings.close();
+//    _currentLocation.close();
+//    _locationChanged.close();
+//    _locationSettings.close();
   }
 }
 

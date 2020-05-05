@@ -34,19 +34,11 @@ class _SearchPlacesState extends State<SearchPlacesScreen> {
                         controller: new TextEditingController(),
                         autoFocus: true,
                         onClearField: () {},
+                        onTap: () {},
                         onChangeText: (newString) {
                           valueNotifier.value = newString;
                         }),
                   ),
-                  InkWell(
-                      onTap: () {},
-                      child: Text(
-                        "Buscar",
-                        style: TextStyle(color: Colors.redAccent),
-                      )),
-                  SizedBox(
-                    width: 10.0,
-                  )
                 ],
               ),
               Flexible(

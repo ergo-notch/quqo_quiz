@@ -15,15 +15,10 @@ class PlacesModel extends Model {
     if (json['next_page_token'] != null)
       places.nextPageToken = json['next_page_token'];
     places.status = json['status'];
-    places.results.addAll((json['results'] as List)
-        .map((place) => PlaceModel.fromJson(place))
-        .toList());
-    if (json['result'] != null)
-      places.results.map((place) {
-        place.references.addAll((json['result']['photos'] as List)
-            .map((detail) => PhotosPlace.fromJson(detail))
-            .toList());
-      });
+    if (json['results'] != null)
+      places.results.addAll((json['results'] as List)
+          .map((place) => PlaceModel.fromJson(place))
+          .toList());
 
     return places;
   }
@@ -34,7 +29,8 @@ class PlaceModel extends Model {
   String icon;
   String placeName;
   String address;
-  List<PhotosPlace> references = new List();
+  List<String> photos = new List();
+  String placeUrl;
 
   PlaceModel();
 
@@ -45,19 +41,29 @@ class PlaceModel extends Model {
     place.icon = json['icon'];
     place.placeName = json['name'];
     place.address = json['vicinity'];
-    place.id = json['id'];
+    place.id = json['place_id'];
     return place;
   }
 }
 
 class PhotosPlace extends Model {
-  String photoReference;
+  List<String> photos = new List<String>();
+  String placeId;
+  String placeUrl;
 
   PhotosPlace();
 
   factory PhotosPlace.fromJson(Map<String, dynamic> json) {
     PhotosPlace photo = new PhotosPlace();
-    photo.photoReference = json['photo_reference'];
+    List<String> photos = new List<String>();
+    if (json['result'] != null) {
+      // ignore: unnecessary_statements
+      ((json['result']['photos'] as List)
+          .forEach((detail) => photos.add(detail['photo_reference'])));
+      photo.placeId = json['result']['place_id'];
+      photo.placeUrl = json['result']['url'];
+    }
+    photo.photos = photos;
     return photo;
   }
 }

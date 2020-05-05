@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:map_launcher/map_launcher.dart';
 import 'package:quiz/models/place_model.dart';
 import 'package:quiz/models/product_model.dart';
 import 'package:quiz/utils/resources.dart';
+import 'package:share/share.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class PlaceDetailsScreen extends StatefulWidget {
@@ -26,7 +28,11 @@ class _PlaceDetailsState extends State<PlaceDetailsScreen> {
             flex: 1,
             child: Stack(
               children: <Widget>[
-                FadeInImage.memoryNetwork(placeholder: null, image: place.icon),
+                    FadeInImage.memoryNetwork(
+                        placeholder: kTransparentImage,
+                        image: place.photos.isEmpty
+                            ? place.icon
+                            : place.photos.first),
                 Positioned(
                   top: 0.0,
                   right: 0.0,
@@ -37,7 +43,10 @@ class _PlaceDetailsState extends State<PlaceDetailsScreen> {
                           Icons.share,
                           color: Colors.red,
                         ),
-                        onPressed: () {}),
+                        onPressed: () {
+                          Share.share(place.placeName + "\n" + place.placeUrl,
+                              subject: place.placeName + "\n" + place.placeUrl);
+                        }),
                   ),
                 )
               ],
@@ -49,7 +58,17 @@ class _PlaceDetailsState extends State<PlaceDetailsScreen> {
                 margin: EdgeInsets.all(10),
                 child: Column(children: [
                   InkWell(
-                      onTap: () {},
+                      onTap: () async {
+                        final availableMaps = await MapLauncher.installedMaps;
+                        print(
+                            availableMaps); // [AvailableMap { mapName: Google Maps, mapType: google }, ...]
+                        await availableMaps.first.showMarker(
+                          coords: Coords(place.coordenates.latitude,
+                              place.coordenates.longitude),
+                          title: place.placeName,
+                          description: place.address,
+                        );
+                      },
                       child: Card(
                         margin: EdgeInsets.all(10.0),
                         elevation: 10.0,

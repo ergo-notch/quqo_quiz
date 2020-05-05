@@ -9,7 +9,10 @@ MERGED from [:location] /Users/ernestogn028/quqo_quiz/build/location/intermediat
 MERGED from [:flutter_facebook_login] /Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:google_maps_flutter] /Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_plugin_android_lifecycle] /Users/ernestogn028/quqo_quiz/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:map_launcher] /Users/ernestogn028/quqo_quiz/build/map_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:location_web] /Users/ernestogn028/quqo_quiz/build/location_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] /Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:share] /Users/ernestogn028/quqo_quiz/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/ffb87f5d471fb875b23ecf927214754a/jetified-facebook-login-5.15.3/AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:21:1-52:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -207,8 +210,14 @@ MERGED from [:google_maps_flutter] /Users/ernestogn028/quqo_quiz/build/google_ma
 MERGED from [:google_maps_flutter] /Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/ernestogn028/quqo_quiz/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/ernestogn028/quqo_quiz/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:map_launcher] /Users/ernestogn028/quqo_quiz/build/map_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:map_launcher] /Users/ernestogn028/quqo_quiz/build/map_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:location_web] /Users/ernestogn028/quqo_quiz/build/location_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:location_web] /Users/ernestogn028/quqo_quiz/build/location_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:share] /Users/ernestogn028/quqo_quiz/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:share] /Users/ernestogn028/quqo_quiz/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/ffb87f5d471fb875b23ecf927214754a/jetified-facebook-login-5.15.3/AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-login:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/ffb87f5d471fb875b23ecf927214754a/jetified-facebook-login-5.15.3/AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-common:5.15.3] /Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/b4ff752c43bc3989e7327fdb772eb259/jetified-facebook-common-5.15.3/AndroidManifest.xml:25:5-27:41

@@ -30,6 +30,10 @@ dependencies:
   flutter_bloc: ^0.21.0
   search_map_place: ^0.3.0
   transparent_image: ^1.0.0
+  map_launcher: ^0.4.5
+  share: ^0.6.4
+  path_provider: 1.6.1
+
 
 
 

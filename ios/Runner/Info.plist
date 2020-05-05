@@ -71,5 +71,18 @@
         <string>fb-messenger-share-api</string>
         <string>fbauth2</string>
         <string>fbshareextension</string> </array>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Necesitamos acceso a tu localización siempre</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>La aplicación necesita saber tu ubicación</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>comgooglemaps</string>
+        <string>baidumap</string>
+        <string>iosamap</string>
+        <string>waze</string>
+        <string>yandexmaps</string>
+        <string>yandexnavi</string>
+    </array>
 </dict>
 </plist>

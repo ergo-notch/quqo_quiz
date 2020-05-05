@@ -14,6 +14,9 @@
             <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.27/android" />
             <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/location-3.0.2/android" />
             <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/location_web-1.0.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/map_launcher-0.4.5/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.1/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/share-0.6.4/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>

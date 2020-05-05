@@ -20,17 +20,22 @@ class SearchPlacesBloc extends Bloc {
 
   Observable<ApiResponse> get places => _placesFetcher.stream;
 
-  fetchPlaces(String name, LatLng coordenates) async {
-    ApiResponse apiResponse = await _repository.fetchPlaces(name, coordenates);
-    (apiResponse.model as PlacesModel).results.map((place) async {
-      ApiResponse detailsResponse = await _repository.getPlaceDetails(place.id);
-      (detailsResponse.model as PlacesModel).results.map((photos){
-        (apiResponse.model as PlacesModel).results.map((place){
+  fetchPlaces(String name, LatLng coordenates)  {
+    _repository.fetchPlaces(name, coordenates).then((response) {
+      (response.model as PlacesModel).results.forEach((place) async {
+        await _repository.getPlaceDetails(place.id).then((apiResponse) {
+          if ((apiResponse.model as PhotosPlace).placeId == place.id) {
+            if ((apiResponse.model as PhotosPlace).photos != null) {
+              place.photos = (apiResponse.model as PhotosPlace).photos;
+            } else {
+              place.photos = new List();
+            }
+            place.placeUrl = (apiResponse.model as PhotosPlace).placeUrl;
+          }
         });
       });
+      _placesFetcher.sink.add(response);
     });
-
-    _placesFetcher.sink.add(apiResponse);
   }
 
   @override
@@ -48,19 +53,16 @@ class Repository {
         'location': coordenates.latitude.toString() +
             ',' +
             coordenates.longitude.toString(),
-        'radius': '10000',
+        'radius': '1000',
+        'keyword': name,
         'name': name
       });
 
-  Future<ApiResponse> getPlaceDetails(String placeId) =>
-      manager.apiRequest(HttpMethods.GET,{'key': Constants.googleApiKey, 'place_id': placeId},"/api/place/details/json");
-
-  Future<ApiResponse> getPhotoReference(String photoReference) =>
-      manager.index({
-        'key': Constants.googleApiKey,
-        'maxwidth': '400',
-        'photoreference': photoReference
-      });
+  Future<ApiResponse> getPlaceDetails(String placeId) => manager.apiRequest(
+      HttpMethods.GET,
+      {'key': Constants.googleApiKey, 'place_id': placeId},
+      "/maps/api/place/details/json",
+      (json) => PhotosPlace.fromJson(json));
 }
 
 final searchPlacesBloc = SearchPlacesBloc();
