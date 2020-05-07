@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quiz/utils/resources.dart';
 
 class UiHelpers{
   static showErrorDialog(BuildContext context, String message) {
@@ -19,4 +20,9 @@ class UiHelpers{
       ),
     );
   }
+
+  static getUrlImage(String url) {
+    return Constants.photoUrl + url;
+  }
+
 }

@@ -38,6 +38,16 @@ class PlaceModel extends Model {
     PlaceModel place = new PlaceModel();
     place.coordenates = new LatLng(json['geometry']['location']['lat'],
         json['geometry']['location']['lng']);
+    if (json['photos'] == null) {
+      place.photos = new List();
+    } else {
+      (json['photos'] as List).forEach((photoJson) {
+        if (place.photos == null) {
+          place.photos = new List();
+        }
+        place.photos.add(photoJson['photo_reference']);
+      });
+    }
     place.icon = json['icon'];
     place.placeName = json['name'];
     place.address = json['vicinity'];
@@ -58,10 +68,12 @@ class PhotosPlace extends Model {
     List<String> photos = new List<String>();
     if (json['result'] != null) {
       // ignore: unnecessary_statements
-      ((json['result']['photos'] as List)
-          .forEach((detail) => photos.add(detail['photo_reference'])));
-      photo.placeId = json['result']['place_id'];
+      if ((json['result']['photos']) != null) {
+        ((json['result']['photos'] as List)
+            .forEach((detail) => photos.add(detail['photo_reference'])));
+      }
       photo.placeUrl = json['result']['url'];
+      photo.placeId = json['result']['place_id'];
     }
     photo.photos = photos;
     return photo;

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f28d07404e333f72cf5d7457455fa899/core-1.0.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/drawable-v21/abc_list_divider_material.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

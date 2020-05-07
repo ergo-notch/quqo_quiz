@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/res/merged/release/drawable-xxhdpi-v4/googleg_disabled_color_18.png",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/google_maps_flutter/intermediates/res/merged/release/drawable-xxhdpi-v4/googleg_standard_color_18.png",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/d39ec00c07e9cc900cbdf184774bcb6f/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
+    }
+]

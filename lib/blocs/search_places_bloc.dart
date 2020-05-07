@@ -1,5 +1,6 @@
 import 'package:flutter_google_places/flutter_google_places.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:quiz/models/model.dart';
 import 'package:quiz/models/place_model.dart';
 import 'package:quiz/providers/bloc.dart';
 import 'package:quiz/utils/connection_manager.dart';
@@ -20,21 +21,27 @@ class SearchPlacesBloc extends Bloc {
 
   Observable<ApiResponse> get places => _placesFetcher.stream;
 
-  fetchPlaces(String name, LatLng coordenates)  {
-    _repository.fetchPlaces(name, coordenates).then((response) {
-      (response.model as PlacesModel).results.forEach((place) async {
-        await _repository.getPlaceDetails(place.id).then((apiResponse) {
-          if ((apiResponse.model as PhotosPlace).placeId == place.id) {
-            if ((apiResponse.model as PhotosPlace).photos != null) {
-              place.photos = (apiResponse.model as PhotosPlace).photos;
-            } else {
-              place.photos = new List();
+  fetchPlaces(String name, LatLng coordenates) {
+    PlacesModel result = new PlacesModel();
+    _repository.fetchPlaces(name, coordenates).then((response) async {
+      result.results = new List();
+      await Future.wait(
+          (response.model as PlacesModel).results.map((place) async {
+        PlaceModel placeModel = place;
+        await _repository.getPlaceDetails(placeModel.id).then((apiResponse) {
+          PhotosPlace photosPlace = apiResponse.model as PhotosPlace;
+          if (photosPlace.placeId == placeModel.id) {
+            if (photosPlace.photos != null) {
+              placeModel.photos = photosPlace.photos;
             }
-            place.placeUrl = (apiResponse.model as PhotosPlace).placeUrl;
+            placeModel.placeUrl = photosPlace.placeUrl;
           }
         });
-      });
-      _placesFetcher.sink.add(response);
+        result.results.add(placeModel);
+      }));
+      ApiResponse finalResult = new ApiResponse();
+      finalResult.model = result;
+      _placesFetcher.sink.add(finalResult);
     });
   }
 

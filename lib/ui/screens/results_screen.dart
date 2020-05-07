@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -5,6 +7,8 @@ import 'package:quiz/blocs/location_bloc.dart';
 import 'package:quiz/blocs/search_places_bloc.dart';
 import 'package:quiz/models/place_model.dart';
 import 'package:quiz/utils/connection_manager.dart';
+import 'package:quiz/utils/resources.dart';
+import 'package:quiz/utils/ui_helpers.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class ResultsScreen extends StatefulWidget {
@@ -54,7 +58,8 @@ class _ResultsState extends State<ResultsScreen> {
                                     (snapshot.data.model as PlacesModel)
                                         .results;
                                 if (places.isEmpty) {
-                                  return Center(child: Text('Sin Resultados'));
+                                  return Center(
+                                      child: CircularProgressIndicator());
                                 } else {
                                   return GridView.count(
                                       crossAxisCount: 2,
@@ -76,7 +81,8 @@ class _ResultsState extends State<ResultsScreen> {
                                                 child: _buildItemView(
                                                     place.photos.isEmpty
                                                         ? place.icon
-                                                        : place.photos.first,
+                                                        : UiHelpers.getUrlImage(
+                                                            place.photos.first),
                                                     place.placeName)));
                                       }));
                                 }
@@ -91,11 +97,10 @@ class _ResultsState extends State<ResultsScreen> {
   }
 
   Widget _buildItemView(String urlImage, String placeHolder) {
-    return Column(children: [
-          FadeInImage.memoryNetwork(
-            placeholder: kTransparentImage,
-            image: urlImage
-          ),
+    return Column(
+        children: [
+      FadeInImage.memoryNetwork(
+          placeholder: kTransparentImage, image: urlImage),
       Container(
         padding: EdgeInsets.all(5.0),
         child: Text(placeHolder),

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f28d07404e333f72cf5d7457455fa899/core-1.0.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f28d07404e333f72cf5d7457455fa899/core-1.0.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f28d07404e333f72cf5d7457455fa899/core-1.0.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f28d07404e333f72cf5d7457455fa899/core-1.0.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/path_provider/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/f28d07404e333f72cf5d7457455fa899/core-1.0.0/res/layout/notification_action_tombstone.xml"
+    }
+]

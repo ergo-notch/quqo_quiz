@@ -4,6 +4,7 @@ import 'package:map_launcher/map_launcher.dart';
 import 'package:quiz/models/place_model.dart';
 import 'package:quiz/models/product_model.dart';
 import 'package:quiz/utils/resources.dart';
+import 'package:quiz/utils/ui_helpers.dart';
 import 'package:share/share.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -26,31 +27,36 @@ class _PlaceDetailsState extends State<PlaceDetailsScreen> {
         children: <Widget>[
           Flexible(
             flex: 1,
-            child: Stack(
-              children: <Widget>[
+            child: Container(
+                width: double.infinity,
+                height: double.infinity,
+                child: Stack(
+                  children: <Widget>[
                     FadeInImage.memoryNetwork(
                         placeholder: kTransparentImage,
                         image: place.photos.isEmpty
                             ? place.icon
-                            : place.photos.first),
-                Positioned(
-                  top: 0.0,
-                  right: 0.0,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: new IconButton(
-                        icon: Icon(
-                          Icons.share,
-                          color: Colors.red,
-                        ),
-                        onPressed: () {
-                          Share.share(place.placeName + "\n" + place.placeUrl,
-                              subject: place.placeName + "\n" + place.placeUrl);
-                        }),
-                  ),
-                )
-              ],
-            ),
+                            : UiHelpers.getUrlImage(place.photos.first)),
+                    Positioned(
+                      top: 0.0,
+                      right: 0.0,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: new IconButton(
+                            icon: Icon(
+                              Icons.share,
+                              color: Colors.red,
+                            ),
+                            onPressed: () {
+                              Share.share(
+                                  place.placeName + "\n" + place.placeUrl,
+                                  subject:
+                                      place.placeName + "\n" + place.placeUrl);
+                            }),
+                      ),
+                    )
+                  ],
+                )),
           ),
           Flexible(
               flex: 2,

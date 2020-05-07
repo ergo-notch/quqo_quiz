@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_tooltip_exit.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_tooltip_enter.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/ernestogn028/quqo_quiz/build/flutter_facebook_login/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/ernestogn028/.gradle/caches/transforms-2/files-2.1/61ce9bf7e58dfa970394e36b28ad71ef/appcompat-1.0.0/res/anim/abc_popup_enter.xml"
+    }
+]
